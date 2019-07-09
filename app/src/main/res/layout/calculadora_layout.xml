@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="100px">
+
+        <LinearLayout android:layout_width="300px"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_gravity="center">
+
+        <EditText android:id="@+id/edtValor1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="numberSigned"/>
+
+        <EditText android:id="@+id/edtValor2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="numberSigned"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_gravity="center">
+
+            <Button android:id="@+id/btnSumar"
+                    android:text="+"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            <Button android:id="@+id/btnResta"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            <Button android:id="@+id/btnMultiplicacion"
+                    android:text="x"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            <Button android:id="@+id/btnDivision"
+                    android:text="%"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/txtResultado"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
